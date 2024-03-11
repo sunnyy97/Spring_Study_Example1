@@ -13,6 +13,7 @@ public class OrderServiceImpl implements OrderService{
     // 인터페이스에서만 의존하도록 설정
     private final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
+
     @Autowired
     public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
