@@ -5,7 +5,7 @@ import hello.core.member.Member;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class FixDiscountPolicy implements DiscountPolicy{
     private int disCountFixAmount = 1000; // 천원 할인
     @Override
